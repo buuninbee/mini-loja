@@ -2,16 +2,37 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mini Loja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- index.html: a página inicial. É só HTML: o PHP entra quando você clica nos produtos -->
-  <h1>Mini Loja</h1>
-  <p>Componentes eletrônicos para os seus projetos, com PHP e SQLite.</p>
+  <header class="topbar">
+    <div class="topbar__inner topbar__inner--narrow">
+      <a class="brand" href="index.html">Mini Loja</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__link" href="index.html" aria-current="page">Início</a>
+        <a class="nav__link" href="cadastro.php">Produtos</a>
+        <a class="nav__link" href="teste.php">Ambiente</a>
+      </nav>
+    </div>
+  </header>
 
-  <ul>
-    <li><a href="cadastro.php">Ver os produtos</a></li>
-    <li><a href="teste.php">Testar o ambiente</a></li>
-  </ul>
+  <main class="page page--narrow">
+    <section class="panel home-card">
+      <h1 class="page-title">Mini Loja</h1>
+      <p class="page-lead">
+        Catálogo de componentes eletrônicos com PHP e SQLite.
+      </p>
+
+      <div class="home-actions">
+        <a class="btn btn--primary" href="cadastro.php">Ver os produtos</a>
+        <a class="btn btn--secondary" href="teste.php">Testar o ambiente</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
